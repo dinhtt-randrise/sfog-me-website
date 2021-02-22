@@ -14,9 +14,9 @@ function go() {
       page: 1
     },
     forcePDFJS: true,
-    PDFJS_URL: 'https://starofold.com/tools/pdf.js/viewer.html'
+    PDFJS_URL: '/tools/pdf.js/viewer.html'
   };
-  var myPDF = PDFObject.embed('https://starofold.com/pd/sfpd-0001-d/guide-909d1694.pdf', "#pdf", options);
+  var myPDF = PDFObject.embed('guide-909d1694.pdf', "#pdf", options);
   var el = document.querySelector('#results');
   el.setAttribute('class', (myPDF) ? 'success' : 'fail');
   el.innerHTML = (myPDF) ? 'PDFObject was successful!' : "Uh-oh, the embeded didn't work.";
