@@ -1,9 +1,24 @@
 <html>
 <head>
   <title>Staro Fold Origami Gift - Elephant Corner Bookmark - DIY Kit - Folding Guide</title>
+  <script src="https://unpkg.com/pdfobject@2.2.4/pdfobject.min.js"></script>
   <script>
 function go() {
-  //location = 'https://starofold.com/pd/sfpd-0001-d/amz/';
+  var options = {
+    pdfOpenParams: {
+      navpanes: 0,
+      toolbar: 0,
+      statusbar: 0,
+      view: "FitV",
+      pagemode: "thumbs",
+      page: 1
+    },
+    forcePDFJS: true
+  };
+  var myPDF = PDFObject.embed('https://starofold.com/pd/sfpd-0001-d/guide-909d1694.pdf', "#pdf", options);
+  var el = document.querySelector('#results');
+  el.setAttribute('class', (myPDF) ? 'success' : 'fail');
+  el.innerHTML = (myPDF) ? 'PDFObject was successful!' : "Uh-oh, the embeded didn't work.";
 }
   </script>
   <style>
@@ -16,7 +31,8 @@ body {
 </head>
 <body onload="go()">
   <div style="position: fixed; top: 0px; left: 0px; bottom: 0px; right: 0px">
-  <iframe style="width: 100%; height: 100%" src="https://starofold.com/pd/sfpd-0001-d/guide-909d1694.pdf" frameborder="0"></iframe>
+  <div id="pdf"></div>
+  <div id="results" class="hidden"></div>
   </div>
 </body>
 </html>
