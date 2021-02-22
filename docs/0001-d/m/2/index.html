@@ -13,7 +13,8 @@ function go() {
       pagemode: "thumbs",
       page: 1
     },
-    forcePDFJS: true
+    forcePDFJS: true,
+    PDFJS_URL: 'https://starofold.com/tools/pdf.js/viewer.html'
   };
   var myPDF = PDFObject.embed('https://starofold.com/pd/sfpd-0001-d/guide-909d1694.pdf', "#pdf", options);
   var el = document.querySelector('#results');
