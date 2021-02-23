@@ -14,7 +14,7 @@ function go() {
       page: 1
     },
     forcePDFJS: true,
-    PDFJS_URL: '/tools/pdf.js/viewer.html'
+    PDFJS_URL: '/tools/pdfjs/web/viewer.html'
   };
   var myPDF = PDFObject.embed('guide-909d1694.pdf', "#pdf", options);
   var el = document.querySelector('#results');
@@ -27,6 +27,23 @@ body {
   margin: 0px;
   padding: 0px;
   overflow: hidden;
+}
+.hidden { 
+  display: none
+}
+#results {
+  padding: 1rem;
+}
+.success {
+  color: #4F8A10;
+  background-color: #DFF2BF;
+}
+.fail {
+  color: #D8000C;
+  background-color: #FFBABA;
+}
+.pdfobject {
+  border: solid 1px #666;
 }
   </style>
 </head>
