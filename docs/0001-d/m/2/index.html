@@ -14,9 +14,9 @@ function go() {
       page: 1
     },
     forcePDFJS: true,
-    PDFJS_URL: 'https://sfog.me/tools/pdfjs/web/viewer.html'
+    PDFJS_URL: '../../../tools/pdfjs/web/viewer.html'
   };
-  var myPDF = PDFObject.embed('https://sfog.me/0001-d/m/2/guide-909d1694.pdf', "#pdf", options);
+  var myPDF = PDFObject.embed('../../../0001-d/m/2/guide-909d1694.pdf', "#pdf", options);
   var el = document.querySelector('#results');
   el.setAttribute('class', (myPDF) ? 'success' : 'fail');
   el.innerHTML = (myPDF) ? 'PDFObject was successful!' : "Uh-oh, the embeded didn't work.";
