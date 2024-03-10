@@ -1,3 +1,31 @@
-![Staro Fold](https://github.com/dinhtt-randrise/sfog-me-website/blob/5e7bacb60b42695d1f121fc66658466b0f92fa08/starofold-64.png)
+```
+         __                             
+        / _|                            
+    ___| |_ ___   __ _   _ __ ___   ___ 
+   / __|  _/ _ \ / _` | | '_ ` _ \ / _ \
+   \__ \ || (_) | (_| |_| | | | | |  __/
+   |___/_| \___/ \__, (_)_| |_| |_|\___|
+                  __/ |                 
+                 |___/                  
+--------------------------------------------
+       Staro Fold Origami Gift
+--------------------------------------------
 
-# Staro Fold Origami Gift
+
+============================================
+              PRODUCTS
+  ---------------------------------------
+
+# Elephant Corner Bookmark - DIY Kit
+# http://sfog.me/0001-d
+
+# Trapezoid Card Stand - Cyan & Yellow Paper
+# http://sfog.me/0003-a
+
+# Elephant Corner Bookmark - Pink & Cyan Paper
+# http://sfog.me/0001-a
+
+# Elephant Corner Bookmark - Pink & Yellow Paper
+# http://sfog.me/0001-b
+
+```
